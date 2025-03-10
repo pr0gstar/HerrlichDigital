@@ -1,8 +1,11 @@
 import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
+  console.log(window.location.hostname === "localhost");
+  const prefix =
+    window.location.hostname === "localhost" ? " 🌶️ running local" : "";
   return [
-    { title: "New Remix App" },
+    { title: `HerrlichDigital${prefix}` },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
