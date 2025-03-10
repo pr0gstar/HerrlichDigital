@@ -2,7 +2,6 @@ import type { MetaFunction } from "@remix-run/node";
 import { Button } from "~/components/ui/button";
 
 export const meta: MetaFunction = () => {
-  console.log(window.location.hostname === "localhost");
   const prefix =
     window.location.hostname === "localhost" ? " 🌶️ running local" : "";
   return [
