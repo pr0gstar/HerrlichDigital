@@ -9,6 +9,7 @@ import type { LinksFunction } from "@remix-run/node";
 
 import styles from "./tailwind.css?url";
 import Header from "~/components/header";
+import Loading from "~/components/loading";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -49,5 +50,5 @@ export default function App() {
 }
 
 export function HydrateFallback() {
-  return <p>Loading...</p>;
+  return <Loading />;
 }
