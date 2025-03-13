@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 export default function Header() {
   return (
-    <div className="p-10">
+    <div className="py-10 px-[10vw]">
       <nav className="text-primary mx-auto flex max-w-8xl items-center justify-between">
         <div className="flex justify-center gap-4 align-middle">
           <Link
